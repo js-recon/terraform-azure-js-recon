@@ -11,7 +11,7 @@
 
 ```hcl
 module "js_recon" {
-  source  = "shriyanss/js-recon/azure"
+  source  = "js-recon/js-recon/azure"
   version = "~> 1.0"
 
   url = "https://example.com"
@@ -98,7 +98,7 @@ Artifacts are uploaded to `https://<storage_account>.blob.core.windows.net/<stor
 
 ```hcl
 module "js_recon" {
-  source = "shriyanss/js-recon/azure"
+  source = "js-recon/js-recon/azure"
   url    = "https://example.com"
 
   break_on_map_files = true # default
@@ -109,7 +109,7 @@ module "js_recon" {
 
 ```hcl
 module "js_recon" {
-  source = "shriyanss/js-recon/azure"
+  source = "js-recon/js-recon/azure"
   url    = "https://example.com"
 
   break_on_vulnerabilities = true
@@ -123,7 +123,7 @@ module "js_recon" {
 
 ```hcl
 module "js_recon" {
-  source = "shriyanss/js-recon/azure"
+  source = "js-recon/js-recon/azure"
   url    = "https://example.com"
 
   schedule = "0 8 * * *"
